@@ -22,8 +22,7 @@ namespace CardComApplication
             string gender = RadioButtonList1.SelectedItem.Value;
             DateTime birth = Convert.ToDateTime(BirthDate.Text);
             clientService.AddClient(id, ClientName.Text, ClientEmail.Text, birth, gender, PhoneClient.Text);
-            Page.Response.Redirect("Index.aspx", true);
-            //ClientScript.RegisterStartupScript(typeof(Page), "closePage", "window.close();", true);
+            ClientScript.RegisterStartupScript(typeof(Page), "closePage", "window.close(); location.href = 'index.aspx'; window.location.reload();", true);
         }
 
   
