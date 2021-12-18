@@ -9,7 +9,6 @@
     <script type='text/javascript'>
         function OpenWindows() {
             var answer = window.open('AddNewClients.aspx', "popup_window", "dialogWidth:500px;dialogHeight:300px;Center:yes");
-            //window.open('yourOtherPage.aspx','_blank');
         }
     </script>
 

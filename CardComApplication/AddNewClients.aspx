@@ -5,40 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-<%--    <script type="text/javascript">
-        function ContactIDRequired(sender, args) {
-            if (document.getElementById("<%IDClient.Text%>").nodeValue == '') {
-                sender.
-            }
-        }
-
-    </script>--%>
-<%--    function jsDecimals(e) {
- 
-    var evt = (e) ? e : window.event;
-    var key = (evt.keyCode) ? evt.keyCode : evt.which;
-    if (key != null) {
-        key = parseInt(key, 10);
-        if ((key < 48 || key > 57) && (key < 96 || key > 105)) {
-            if (!jsIsUserFriendlyChar(key, "Decimals")) {
-                return false;
-            }
-        }
-        else {
-            if (evt.shiftKey) {
-                return false;
-            }
-        }
-    }
-    return true;
-}--%>
 
 </head>
 
 <body>
     <form id="form1" runat="server" dir="rtl">
         <div>
-            <h1>addNewClients</h1>
+            <h1>הוספת לקוח חדש</h1>
         </div>
         <div>  
             <table class="auto-style1">  
@@ -47,7 +20,6 @@
                     <td>  
                         <asp:TextBox ID="IDClient" runat="server" TextMode="Number" ></asp:TextBox> 
                         <asp:RequiredFieldValidator ID="IDValidate" ControlToValidate="IDClient" ErrorMessage="נדרש תעודת זהות" ForeColor="Red"  runat="server" ValidationGroup="ClientGroupValid" />
-<%--                        <asp:CustomValidator runat="server" ID="customIDValid" ControlToValidate="IDClient" ForeColor="Red" ValidateEmptyText="true" ErrorMessage="נדרש תעודת זהות" OnServerValidate="customIDNumber"></asp:CustomValidator>--%>
                     </td> 
   
                </tr>  

@@ -30,8 +30,6 @@ namespace CardComApplication
         {
             string s = "window.open('AddNewClients.aspx', '', 'dialogWidth:500px;dialogHeight:300px;Center:yes');";
             ClientScript.RegisterStartupScript(typeof(Page), "openAddClientPage", s, true);
-            Page.Response.Redirect(Page.Request.Url.ToString(), true);
-            //ClientScript.RegisterStartupScript(typeof(Page), "openAddClientPage", "window.open('AddNewClients.aspx', '', 'dialogWidth: 500px; dialogHeight: 300px; Center: yes');", true);
         }
 
         protected void DeleteClient(object sender, EventArgs args)
