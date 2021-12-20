@@ -10,6 +10,7 @@
 
 <body>
     <form id="form1" runat="server" dir="rtl">
+        <link rel="stylesheet" type="text/css" href="/Content/bootstrap.css">
         <div>
             <h1>הוספת לקוח חדש</h1>
         </div>

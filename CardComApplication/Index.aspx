@@ -19,7 +19,8 @@
             <h1>לקוחות</h1>
         </div>
         <div>
-            <asp:GridView ID="ClientGr" runat="server" EditRowStyle-HorizontalAlign="Right" AutoGenerateColumns="false" AutoGenerateSelectButton="True">
+            <link rel="stylesheet" type="text/css" href="/Content/bootstrap.css">
+            <asp:GridView ID="ClientGr" runat="server" EditRowStyle-HorizontalAlign="Right" Width="80%" class="table table-striped" AutoGenerateColumns="false" AutoGenerateSelectButton="True">
                 <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="White" />
                 <Columns>
                     <asp:BoundField DataField="ID" HeaderText="תעודת זהות" />
